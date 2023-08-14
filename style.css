@@ -3,81 +3,21 @@ body {
     padding: 0;
     border: 0;
     background-color: #121212;
+    width: 100%;
+
+}
+
+h1 {
+    color: darkorange;
 }
 
 body input {
     outline: 0;
 }
 
-#hero {
-    text-align: center;
-    width: 100%;
-
-}
-
-.container {
-    padding: 100px 0 0 0;
-    text-align: center;
-}
 
 
-.search-container {
-    position: relative;
-    display: inline-block;
-}
-
-h1 {
-    font-size: 24px;
-    color: #F7BF1E;
-}
-
-.search-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-.left-icon {
-    left: 0;
-}
-
-.right-icon {
-    cursor: pointer;
-    background-color: #F7BF1E;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 24px;
-    vertical-align: middle;
-    color: white;
-    margin-left:-4px;
-    border-radius: 0 50px 50px 0;
-    border-top: 3px solid #F7BF1E;
-    border-bottom: 3px solid #F7BF1E;
-    border-right: 3px solid #F7BF1E;
-}
-
-
-        /* Adjust the padding to make space for the icons */
-input[type="text"] {
-            
-    padding: 15px 50px 15px 45px;
-    font-size: 18px;
-    vertical-align: middle;
-    width: 700px; /* Adjust the width as needed */
-    border-radius: 50px 0 0 50px;
-    border-top: 3px solid #F7BF1E;
-    border-right: none;
-    border-bottom: 3px solid #F7BF1E;
-    border-left: 3px solid #F7BF1E;
-}
-
-
-
-
-.top {
+.top-1 {
         margin-top: 40px;
 }
 
@@ -105,115 +45,3 @@ a {
     filter: brightness(60%); /* Reduce brightness on hover */
     border: 5px solid #FFFFFF;
 }
-
-
-
-
-/* Responsive styles for Realme X2 */
-
-@media only screen and (max-width: 1080px) {
-    .container {
-        padding-top: 50px; /* Adjust padding for smaller screens */
-        width: 100%; /* Set the container to take up full width */
-        box-sizing: border-box; /* Include padding and border in width calculation */
-    }
-
-    input[type="text"] {
-        width: 59%; /* Use full width for smaller screens */
-    }
-
-    span {
-        font-size: 60px; /* Adjust font size for smaller screens */
-    }
-}
-
-/* Responsive styles */
-
-@media only screen and (max-width: 768px) {
-    /* Adjust container padding for smaller screens */
-    .container {
-        padding: 50px 0 0 0;
-    }
-
-    /* Make input field full width for smaller screens */
-    input[type="text"] {
-        width: 53%;
-    }
-
-    /* Adjust font size for smaller screens */
-    h1 {
-        font-size: 24px;
-    }
-}
-
-
-@media only screen and (max-width: 360px) {
-    /* Adjust container padding for smaller screens */
-    .container {
-        padding: 50px 0 0 0;
-    }
-
-    /* Make input field full width for smaller screens */
-    input[type="text"] {
-        width: 55%;
-    }
-
-    /* Adjust font size for smaller screens */
-    h1 {
-        font-size: 24px;
-    }
-}
-
-
-
-/* Responsive styles */
-
-@media only screen and (max-width: 340px) {
-    /* Make input field full width for smaller screens */
-    input[type="text"] {
-        width: 53%;
-    }
-}
-
-
-/* Responsive styles */
-
-@media only screen and (max-width: 320px) {
-    /* Adjust container padding for smaller screens */
-    .container {
-        padding: 50px 0 0 0;
-    }
-
-    /* Make input field full width for smaller screens */
-    input[type="text"] {
-        width: 50%;
-    }
-
-    /* Adjust font size for smaller screens */
-    h1 {
-        font-size: 16px;
-    }
-}
-
-
-
-/* Responsive styles */
-
-@media only screen and (max-width: 240px) {
-    /* Adjust container padding for smaller screens */
-    .container {
-        padding: 0px 0 0 0;
-    }
-
-    /* Make input field full width for smaller screens */
-    input[type="text"] {
-        width: 30%;
-    }
-
-    /* Adjust font size for smaller screens */
-    h1 {
-        font-size: 16px;
-    }
-}
-
-
