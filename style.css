@@ -45,3 +45,26 @@ a {
     filter: brightness(60%); /* Reduce brightness on hover */
     border: 5px solid #FFFFFF;
 }
+
+/* Responsive styles */
+
+@media only screen and (max-width: 420px) {
+    .top span a img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .top span a img {
+        width: 70px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .top span a img {
+        width: 60px;
+        height: auto;
+    }
+}
