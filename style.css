@@ -137,7 +137,7 @@ a {
 
     /* Make input field full width for smaller screens */
     input[type="text"] {
-        width: 58%;
+        width: 53%;
     }
 
     /* Adjust font size for smaller screens */
