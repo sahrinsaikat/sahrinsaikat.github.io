@@ -119,7 +119,7 @@ a {
     }
 
     input[type="text"] {
-        width: 60%; /* Use full width for smaller screens */
+        width: 59%; /* Use full width for smaller screens */
     }
 
     span {
@@ -178,7 +178,7 @@ a {
 
     /* Make input field full width for smaller screens */
     input[type="text"] {
-        width: 52%;
+        width: 50%;
     }
 
     /* Adjust font size for smaller screens */
@@ -199,7 +199,7 @@ a {
 
     /* Make input field full width for smaller screens */
     input[type="text"] {
-        width: 34%;
+        width: 30%;
     }
 
     /* Adjust font size for smaller screens */
