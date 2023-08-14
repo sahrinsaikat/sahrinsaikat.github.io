@@ -35,9 +35,15 @@ a {
     width: 100px; /* Set your preferred image width */
     height: auto;
     border-radius: 10px;
-    border: 6px solid #6c6c6c;
+    border: 6px solid #ffc1c1;
     margin-right: 15px;
     transition: transform 0.3s, filter 0.3s;
+
+
+
+
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
         
 .top span a:hover img {
