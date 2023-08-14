@@ -158,7 +158,7 @@ a {
 
     /* Make input field full width for smaller screens */
     input[type="text"] {
-        width: 57%;
+        width: 55%;
     }
 
     /* Adjust font size for smaller screens */
@@ -206,25 +206,6 @@ a {
     h1 {
         font-size: 16px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-bo {
-color : #f69110;
-color : #08192b;
-color : #00af80;
-color : #ff5757;
 }
 
 
