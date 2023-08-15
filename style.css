@@ -28,6 +28,10 @@ body input {
         margin-top: 40px;
 }
 
+span {
+    font-size: 90px;
+
+}
 
 a {
     text-decoration: none;
