@@ -14,7 +14,9 @@ body input {
     outline: 0;
 }
 
-
+.margin {
+    margin-top: 60px;
+}
 
 .top-1 {
         margin-top: 40px;
