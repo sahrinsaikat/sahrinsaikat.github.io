@@ -25,6 +25,64 @@
         box-sizing: border-box;
         text-align: center;
     }
+    
+    
+    
+    /* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+    
+    
+    
+    
+    
+    
 
     span {
         text-align: center;
@@ -89,93 +147,86 @@
 </style>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container margin">
-        <div class="profile">
-            <img src="favicon.jpg" alt="">
-        </div>
-        <span>Hi, I'm <b>Sahrin Saikat</b> <abbr title="Verifed Account"><span><i class='bx bxs-badge-check'></i></span></span></abbr>          
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <div class="search-container">
-                <label for="search" class="search-icon">
-                    <!-- Use the Google favicon as the left icon -->
-                    <img src="https://www.google.com/favicon.ico" alt="Google">
-                </label>
-                <input type="text" id="search" name="q" placeholder="Search">
-                <button type="submit" class="right-icon">
-                    <!-- Use the Font Awesome search icon for the right icon -->
-                    <i class="fas fa-search"></i>
-                </button>
+<body onload="myFunction()" style="margin:0;">
+       <div id="loader"></div>
+       <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="container margin">
+            <div class="profile">
+                <img src="favicon.jpg" alt="">
             </div>
-        </form>
+            <span>Hi, I'm <b>Sahrin Saikat</b> <abbr title="Verifed Account"></span><span><i class='bx bxs-badge-check'></i></span></abbr>          
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <div class="search-container">
+                    <label for="search" class="search-icon">
+                        <!-- Use the Google favicon as the left icon -->
+                        <img src="https://www.google.com/favicon.ico" alt="Google">
+                    </label>
+                    <input type="text" id="search" name="q" placeholder="Search">
+                    <button type="submit" class="right-icon">
+                        <!-- Use the Font Awesome search icon for the right icon -->
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="top-1 top">
+                <span><a href="https://moviedokan.buzz/" target="_blank"><img src="img/Sai-2.jpg" alt=""></a></span>
+                <span><a href="https://mlwbd.love/" target="_blank"><img src="img/Saikat-02.jpg" alt=""></a></span>
+                <span><a href="https://mlsbd.shop/" target="_blank"><img src="img/Saikat-03.jpg" alt=""></a></span>
+
+            </div>
+            <div class="top">
+                <span><a href="https://www.forbes.com/" target="_blank"><img src="img/Saikat-01.jpg" alt=""></a></span>
+                <span><a href="https://www.tradingview.com/" target="_blank"><img src="img/Saikat-04.jpg" alt=""></a></span>
+                <span><a href="https://coinmarketcap.com/" target="_blank"><img src="img/Saikat-05.jpg" alt=""></a></span>
+            </div>
+            <div class="top">
+                <span><a href="https://www.coingecko.com/" target="_blank"><img src="img/Saikat-06.jpg" alt=""></a></span>
+                <span><a href="https://www.coindesk.com/" target="_blank"><img src="img/Saikat-07.jpg" alt=""></a></span>
+                <span><a href="https://cointelegraph.com/" target="_blank"><img src="img/Saikat-08.jpg" alt=""></a></span>
+            </div>
+            <div class="top">
+                <span><a href="https://u.today/latest-cryptocurrency-news" target="_blank"><img src="img/Saikat-09.jpg" alt=""></a></span>
+                <span><a href="https://decrypt.co/" target="_blank"><img src="img/Saikat-10.jpg" alt=""></a></span>
+                <span><a href="https://coinmarketcal.com/en/" target="_blank"><img src="img/Saikat-11.jpg" alt=""></a></span>
+            </div>
+            <div class="top">
+                <span><a href="https://subscene.icu/" target="_blank"><img src="img/SUB.jpg" alt=""></a></span>
+                <span><a href="https://filecr.com/en/" target="_blank"><img src="img/3.jpg" alt=""></a></span>
+                <span><a href="https://happymod.com/" target="_blank"><img src="img/Saikat-12.jpg" alt=""></a></span>
+            </div>
+            <div class="top">
+                <span><a href="https://www.iconshopper.com/" target="_blank"><img src="img/ICON.jpg" alt=""></a></span>
+                <span><a href="https://www.manfarebd.com/" target="_blank"><img src="img/MAN.jpg" alt=""></a></span>
+                <span><a href="https://www.batabd.com/" target="_blank"><img src="img/bata.jpg" alt=""></a></span>
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <div class="top-1 top">
-            <span><a href="https://moviedokan.buzz/" target="_blank"><img src="img/Sai-2.jpg" alt=""></a></span>
-            <span><a href="https://mlwbd.love/" target="_blank"><img src="img/Saikat-02.jpg" alt=""></a></span>
-            <span><a href="https://mlsbd.shop/" target="_blank"><img src="img/Saikat-03.jpg" alt=""></a></span>
-            
-        </div>
-        <div class="top">
-            <span><a href="https://www.forbes.com/" target="_blank"><img src="img/Saikat-01.jpg" alt=""></a></span>
-            <span><a href="https://www.tradingview.com/" target="_blank"><img src="img/Saikat-04.jpg" alt=""></a></span>
-            <span><a href="https://coinmarketcap.com/" target="_blank"><img src="img/Saikat-05.jpg" alt=""></a></span>
-        </div>
-        <div class="top">
-            <span><a href="https://www.coingecko.com/" target="_blank"><img src="img/Saikat-06.jpg" alt=""></a></span>
-            <span><a href="https://www.coindesk.com/" target="_blank"><img src="img/Saikat-07.jpg" alt=""></a></span>
-            <span><a href="https://cointelegraph.com/" target="_blank"><img src="img/Saikat-08.jpg" alt=""></a></span>
-        </div>
-        <div class="top">
-            <span><a href="https://u.today/latest-cryptocurrency-news" target="_blank"><img src="img/Saikat-09.jpg" alt=""></a></span>
-            <span><a href="https://decrypt.co/" target="_blank"><img src="img/Saikat-10.jpg" alt=""></a></span>
-            <span><a href="https://coinmarketcal.com/en/" target="_blank"><img src="img/Saikat-11.jpg" alt=""></a></span>
-        </div>
-        <div class="top">
-            <span><a href="https://subscene.icu/" target="_blank"><img src="img/SUB.jpg" alt=""></a></span>
-            <span><a href="https://filecr.com/en/" target="_blank"><img src="img/3.jpg" alt=""></a></span>
-            <span><a href="https://happymod.com/" target="_blank"><img src="img/Saikat-12.jpg" alt=""></a></span>
-        </div>
-        <div class="top">
-            <span><a href="https://www.iconshopper.com/" target="_blank"><img src="img/ICON.jpg" alt=""></a></span>
-            <span><a href="https://www.manfarebd.com/" target="_blank"><img src="img/MAN.jpg" alt=""></a></span>
-            <span><a href="https://www.batabd.com/" target="_blank"><img src="img/bata.jpg" alt=""></a></span>
-        </div>
-    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script>
+        var myVar;
 
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
 
-
-
-
-<div class="loader">
-  <div class="box box0">
-    <div></div>
-  </div>
-  <div class="box box1">
-    <div></div>
-  </div>
-  <div class="box box2">
-    <div></div>
-  </div>
-  <div class="box box3">
-    <div></div>
-  </div>
-  <div class="box box4">
-    <div></div>
-  </div>
-  <div class="box box5">
-    <div></div>
-  </div>
-  <div class="box box6">
-    <div></div>
-  </div>
-  <div class="box box7">
-    <div></div>
-  </div>
-  <div class="ground">
-    <div></div>
-  </div>
-</div>
-
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
 </body>
 </html>
