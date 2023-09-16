@@ -58,7 +58,7 @@ a {
 
 @media only screen and (max-width: 420px) {
     .top span a img {
-        width: 60px;
+        width: 62px;
         height: auto;
     }
 }
@@ -72,7 +72,7 @@ a {
 
 @media only screen and (max-width: 320px) {
     .top span a img {
-        width: 60px;
+        width: 40px;
         height: auto;
     }
     span {
