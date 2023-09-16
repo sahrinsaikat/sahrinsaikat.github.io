@@ -39,7 +39,7 @@ a {
 }
 
 .top span a img {
-    width: 75px; /* Set your preferred image width */
+    width: 70px; /* Set your preferred image width */
     height: auto;
     border-radius: 10px;
     border: 4px solid #ffc1c1;
@@ -58,14 +58,14 @@ a {
 
 @media only screen and (max-width: 420px) {
     .top span a img {
-        width: 80px;
+        width: 62px;
         height: auto;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .top span a img {
-        width: 70px;
+        width: 55px;
         height: auto;
     }
 }
