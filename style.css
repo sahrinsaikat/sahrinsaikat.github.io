@@ -58,7 +58,7 @@ a {
 
 @media only screen and (max-width: 420px) {
     .top span a img {
-        width: 62px;
+        width: 60px;
         height: auto;
     }
 }
